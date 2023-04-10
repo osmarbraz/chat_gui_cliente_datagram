@@ -55,7 +55,12 @@ public class FrmCliente extends javax.swing.JFrame {
 
         jLabel1.setText("Endereço Servidor:");
 
-        txtEnderecoServidor.setText("192.168.0.1");
+        txtEnderecoServidor.setText("localhost");
+        txtEnderecoServidor.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtEnderecoServidorActionPerformed(evt);
+            }
+        });
 
         jLabel2.setText("Porta Servidor:");
 
@@ -284,6 +289,10 @@ public class FrmCliente extends javax.swing.JFrame {
     private void btnEnviarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEnviarActionPerformed
         cliente.enviaMensagem(txtMensagemSaida.getText());        
     }//GEN-LAST:event_btnEnviarActionPerformed
+
+    private void txtEnderecoServidorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtEnderecoServidorActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtEnderecoServidorActionPerformed
       
     //Cliente com o servidor
     Cliente cliente = null;
