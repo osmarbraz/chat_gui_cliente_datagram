@@ -3,7 +3,7 @@
 ## Contextualização
 
 - Programa cliente java de chat usando datagrama.
-- Use o repositório "datagrama_servidor_chat_gui" como o programa servidor.
+- Use o repositório "datagrama_chat_gui_servidor" como o programa servidor.
 
 ## Arquivos
 
